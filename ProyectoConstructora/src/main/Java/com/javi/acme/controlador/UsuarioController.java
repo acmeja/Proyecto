@@ -17,6 +17,7 @@ import com.javi.acme.formulario.UsuarioForm;
 import com.javi.acme.servicios.UsuarioService;
 import com.javi.acme.servicios.UsuarioServiceImpl;
 import com.javi.acme.util.archivo_bd;
+import javax.servlet.jsp.*;
 
 
 @SessionAttributes("basedatos")
@@ -29,8 +30,9 @@ public class UsuarioController {
 	    @RequestMapping(value = "/inicializarLogin.html", method = RequestMethod.POST)
 	    public ModelAndView inicializarUsuario(@ModelAttribute("BaseDatosForm") BaseDatosForm baseDatosForm)
 	    {	
+	    	
 	    	ModelAndView modelAndView = new ModelAndView("login" , "usuarioForm", new UsuarioForm());
-	    
+	    	
 	    	System.out.println(baseDatosForm.getBasededatos());
 	    	sistemaausar = baseDatosForm.getBasededatos();
 	    	modelAndView.addObject("basedatos",baseDatosForm);

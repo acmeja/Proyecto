@@ -160,11 +160,6 @@
     	<version>3.2.4.RELEASE</version>
     	<systemPath>C:\Users\jzepeda01\Documents\eclipse\features</systemPath>
     </dependency>
-    <dependency>
-    	<groupId>org.springframework</groupId>
-    	<artifactId>spring-security-taglibs</artifactId>
-    	<version>3.2.4.RELEASE</version>
-    </dependency>
 </dependencies>
   <build>
     <finalName>ProyectoConstructora</finalName>

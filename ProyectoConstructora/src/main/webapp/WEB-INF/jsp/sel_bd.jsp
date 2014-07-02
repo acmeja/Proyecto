@@ -10,6 +10,9 @@
 <title>SELECCIONAR SISTEMA</title>
 </head>
 <body>
+<%
+	Integer inte  = (Integer) session.getAttribute("baseDatosForm");
+%>
 <c:if test="${mensaje !='Usuario Correcto'}">
     <h4>${mensaje}</h4>
 </c:if>
