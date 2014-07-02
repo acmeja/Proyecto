@@ -1,0 +1,19 @@
+@CHARSET "ISO-8859-1";
+
+#resaltar_acc
+{
+	height: 30px;
+	width: 30px;
+	margin: 2px 0;
+	-webkit-transition: all 1s ease;
+	-moz-transition: all 1s ease;
+	-ms-transition: all 1s ease;
+	transition: all 1s ease;
+}
+#resaltar_acc:hover
+{
+	height: 33px;
+	width: 40px;
+	margin-left: -5px;
+}
+
